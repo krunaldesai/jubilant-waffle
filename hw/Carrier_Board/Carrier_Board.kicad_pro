@@ -88,19 +88,19 @@
           ""
         ],
         [
-          "copper_edge_clearance|185000000|100500000|48340834-511b-4a17-8f09-0e26bc91ace0|e2465c6a-a0b5-4ebd-8e13-a80ccc41e785",
-          ""
-        ],
-        [
           "copper_edge_clearance|185000000|114000000|48340834-511b-4a17-8f09-0e26bc91ace0|3dbdd6c7-74ea-4d14-9c45-2ad0bf1731fc",
           ""
         ],
         [
-          "solder_mask_bridge|183545180|90408207|216f775e-e1e0-4e3d-8fdd-e73a24713c64|11c0c775-373c-4bc3-ab86-b346d0fcf668",
+          "copper_edge_clearance|185000000|98500000|48340834-511b-4a17-8f09-0e26bc91ace0|e2465c6a-a0b5-4ebd-8e13-a80ccc41e785",
           ""
         ],
         [
-          "solder_mask_bridge|183545180|98391792|2e4c829a-b412-4d43-94dc-b45c16ff7ba3|11c0c775-373c-4bc3-ab86-b346d0fcf668",
+          "solder_mask_bridge|183545180|90408207|216f775e-e1e0-4e3d-8fdd-e73a24713c64|1b5a56fb-b61d-4c30-8209-0091038cf453",
+          ""
+        ],
+        [
+          "solder_mask_bridge|183545180|97091792|2e4c829a-b412-4d43-94dc-b45c16ff7ba3|1b5a56fb-b61d-4c30-8209-0091038cf453",
           ""
         ]
       ],

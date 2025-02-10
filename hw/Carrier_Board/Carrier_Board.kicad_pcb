@@ -10682,7 +10682,7 @@
 	)
 	(gr_poly
 		(pts
-			(xy 183 100.5) (xy 185 100.5) (xy 185 120) (xy 183 120)
+			(xy 183 98.5) (xy 185 98.5) (xy 185 120) (xy 183 120)
 		)
 		(stroke
 			(width 0.2)
@@ -10841,8 +10841,8 @@
 		(uuid "b34d577b-3ab6-4721-a13c-48e874dedc16")
 	)
 	(gr_rect
-		(start 141 112)
-		(end 159 117)
+		(start 142 112.5)
+		(end 159 117.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -10852,8 +10852,8 @@
 		(uuid "56bf6f53-e57f-40df-a3a5-750aca7b7088")
 	)
 	(gr_rect
-		(start 166.61875 90.5)
-		(end 171.38125 93.5)
+		(start 136.5 95.38125)
+		(end 139.5 100.14375)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -10863,8 +10863,8 @@
 		(uuid "0abf549b-6641-4aa8-bc4f-60cf19c19d83")
 	)
 	(gr_rect
-		(start 130.7625 113)
-		(end 149.2375 116)
+		(start 131.5 83.525)
+		(end 134.5 104)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -11074,7 +11074,7 @@
 		(layer "F.Fab")
 		(uuid "f7421f99-368c-46e0-bb62-c2059f7a0c1d")
 	)
-	(gr_text "REV A00 TOP"
+	(gr_text "REV A TOP"
 		(at 184 89.5 270)
 		(layer "F.Cu")
 		(uuid "3754f908-b5c6-46cd-92e3-adf809bc9dae")
@@ -11086,8 +11086,8 @@
 			(justify left)
 		)
 	)
-	(gr_text "REV A00 BOT"
-		(at 184 99.3 270)
+	(gr_text "REV A BOT"
+		(at 184 98 270)
 		(layer "B.Cu")
 		(uuid "17eb574f-eadd-4f40-99cd-8f2381e24017")
 		(effects
@@ -11148,7 +11148,7 @@
 	)
 	(gr_text "PWR"
 		(at 169 95.2 0)
-		(layer "F.SilkS")
+		(layer "F.SilkS" knockout)
 		(uuid "5aef8ed7-78b6-4b96-81c3-bbc9f2d1d496")
 		(effects
 			(font
@@ -11184,7 +11184,7 @@
 	)
 	(gr_text "3V3 PWR"
 		(at 139 115.5 90)
-		(layer "F.SilkS")
+		(layer "F.SilkS" knockout)
 		(uuid "672871f6-6f54-412f-99ef-ae8372552b07")
 		(effects
 			(font
@@ -11221,7 +11221,7 @@
 	)
 	(gr_text "MOD"
 		(at 170.25 83.25 0)
-		(layer "F.SilkS")
+		(layer "F.SilkS" knockout)
 		(uuid "8ca032ca-24e7-405e-b973-0e8879b09fc0")
 		(effects
 			(font
@@ -11283,7 +11283,7 @@
 	)
 	(gr_text "PWR"
 		(at 170.25 85 0)
-		(layer "F.SilkS")
+		(layer "F.SilkS" knockout)
 		(uuid "a09719e2-7a0c-459d-9b75-36b5526fbe10")
 		(effects
 			(font
@@ -11319,7 +11319,7 @@
 	)
 	(gr_text "CN105"
 		(at 169.1 93.25 0)
-		(layer "F.SilkS")
+		(layer "F.SilkS" knockout)
 		(uuid "a8c3e9b1-f2d8-48f1-9bb0-c376b1076750")
 		(effects
 			(font
@@ -11339,6 +11339,18 @@
 				(thickness 0.18)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "ID"
+		(at 139.75 117.5 0)
+		(layer "F.SilkS" knockout)
+		(uuid "e6895bc7-03e6-4c6f-b37d-a79ab8220bb4")
+		(effects
+			(font
+				(size 1.2 1.5)
+				(thickness 0.18)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "GND"
@@ -11366,7 +11378,7 @@
 		)
 	)
 	(gr_text "A"
-		(at 173 91.975 0)
+		(at 138.025 101.7625 270)
 		(layer "B.SilkS")
 		(uuid "49256613-aaa9-41d1-bb00-799afb8cf685")
 		(effects
@@ -11378,8 +11390,8 @@
 		)
 	)
 	(gr_text "SN"
-		(at 152.2375 115.5 0)
-		(layer "B.SilkS")
+		(at 132.25 106.5 270)
+		(layer "B.SilkS" knockout)
 		(uuid "5932283c-06a7-4fe7-a19a-c26e66a1eac1")
 		(effects
 			(font
@@ -11390,8 +11402,8 @@
 		)
 	)
 	(gr_text "REV"
-		(at 178 92 0)
-		(layer "B.SilkS")
+		(at 138 106.7625 270)
+		(layer "B.SilkS" knockout)
 		(uuid "a215967e-6570-4332-88c8-5283f65a7a3e")
 		(effects
 			(font
@@ -11401,8 +11413,8 @@
 			(justify left mirror)
 		)
 	)
-	(gr_text "MITSUBISHI\nCN105 CONTROLLER"
-		(at 151.1 103 0)
+	(gr_text "MITSUBISHI\nCN105 INTERFACE MODULE"
+		(at 181 96 0)
 		(layer "B.SilkS")
 		(uuid "a2e2a2d9-ff15-48a3-abee-23d75ad833e0")
 		(effects
@@ -13092,6 +13104,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "1b1bc454-e5a3-4eed-a7ad-908c94932230")
+	)
+	(via
+		(at 184 99)
+		(size 0.8)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 1)
+		(uuid "1b5a56fb-b61d-4c30-8209-0091038cf453")
 	)
 	(via
 		(at 153.1 94.9)
@@ -15528,7 +15548,7 @@
 		)
 		(polygon
 			(pts
-				(xy 183 89) (xy 183 99.5) (xy 185 99.5) (xy 185 89)
+				(xy 183 89) (xy 183 98.5) (xy 185 98.5) (xy 185 89)
 			)
 		)
 	)
@@ -15557,8 +15577,8 @@
 			(layer "B.Cu")
 			(pts
 				(xy 184.942539 80.020185) (xy 184.988294 80.072989) (xy 184.9995 80.1245) (xy 184.9995 88.876) (xy 184.979815 88.943039)
-				(xy 184.927011 88.988794) (xy 184.8755 89) (xy 183 89) (xy 183 99.5) (xy 184.8755 99.5) (xy 184.942539 99.519685)
-				(xy 184.988294 99.572489) (xy 184.9995 99.624) (xy 184.9995 119.8755) (xy 184.979815 119.942539)
+				(xy 184.927011 88.988794) (xy 184.8755 89) (xy 183 89) (xy 183 98.5) (xy 184.8755 98.5) (xy 184.942539 98.519685)
+				(xy 184.988294 98.572489) (xy 184.9995 98.624) (xy 184.9995 119.8755) (xy 184.979815 119.942539)
 				(xy 184.927011 119.988294) (xy 184.8755 119.9995) (xy 115.1245 119.9995) (xy 115.057461 119.979815)
 				(xy 115.011706 119.927011) (xy 115.0005 119.8755) (xy 115.0005 113.952155) (xy 162 113.952155) (xy 162 116.047844)
 				(xy 162.006401 116.107375) (xy 162.015277 116.13117) (xy 163.017037 115.12941) (xy 163.034075 115.192993)
