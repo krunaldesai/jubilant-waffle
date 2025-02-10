@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Carrier_Board")(type "KiCad")(uri "${KIPRJMOD}/Carrier_Board.pretty")(options "")(descr ""))
+)
