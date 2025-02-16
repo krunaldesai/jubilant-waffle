@@ -8183,7 +8183,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "~"
 			(at 212.09 144.78 0)
 			(effects
 				(font

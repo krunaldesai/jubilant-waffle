@@ -1,5 +1,5 @@
 (footprint "Atom_S3-Lite"
-	(version 20241228)
+	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
@@ -147,7 +147,7 @@
 		(uuid "7aef584c-707d-487f-aa13-3c58d77c6153")
 	)
 	(fp_text user "8"
-		(at -14.5 2.54 0)
+		(at -10 2.54 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "4a833499-41bc-4314-90f9-91be3b9e812f")
@@ -160,7 +160,7 @@
 		)
 	)
 	(fp_text user "1"
-		(at 14 -2.54 0)
+		(at 9.5 -2.54 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "5a7f122c-f35d-42d5-b325-f3b87d134381")
@@ -173,7 +173,7 @@
 		)
 	)
 	(fp_text user "2"
-		(at 14 0 0)
+		(at 9.5 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "71b8d796-6421-4440-8a74-a6a375d46f61")
@@ -186,7 +186,7 @@
 		)
 	)
 	(fp_text user "6"
-		(at -14.5 7.62 0)
+		(at -10 7.62 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "a46dc105-7cff-4f2c-9c46-3388b76f86dc")
@@ -199,7 +199,7 @@
 		)
 	)
 	(fp_text user "9"
-		(at -14.5 0 0)
+		(at -10 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "a4aa8ffa-a5e5-41f2-9737-04f627fa5eee")
@@ -212,7 +212,7 @@
 		)
 	)
 	(fp_text user "3"
-		(at 14 2.54 0)
+		(at 9.5 2.54 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "ac045737-ec19-4e32-a195-d1c3b42f49a6")
@@ -225,7 +225,7 @@
 		)
 	)
 	(fp_text user "4"
-		(at 14 5.08 0)
+		(at 9.5 5.08 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "ac835d6e-e684-4f24-8a1f-e171bea1f8ed")
@@ -238,7 +238,7 @@
 		)
 	)
 	(fp_text user "5"
-		(at 14 7.62 0)
+		(at 9.5 7.62 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "e2e75dae-f914-4acd-abdc-f84e545a93cd")
@@ -251,7 +251,7 @@
 		)
 	)
 	(fp_text user "7"
-		(at -14.5 5.08 0)
+		(at -10 5.08 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "f8063ae5-0355-4317-82f9-0d54a14c570e")
@@ -264,7 +264,7 @@
 		)
 	)
 	(fp_text user "2"
-		(at 13.5 0 0)
+		(at 9 0 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "04c68fd4-c2ea-45c3-a74e-98c07121ba69")
@@ -277,7 +277,7 @@
 		)
 	)
 	(fp_text user "G6"
-		(at 10 2.54 0)
+		(at 5.5 2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "25e2749c-c334-4417-ac44-3f7fa0ae0454")
@@ -290,7 +290,7 @@
 		)
 	)
 	(fp_text user "G8"
-		(at 10 7.62 0)
+		(at 5.5 7.62 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "261f410b-3091-407a-a968-9fff1ed4c2c3")
@@ -303,7 +303,7 @@
 		)
 	)
 	(fp_text user "GND"
-		(at -10 7.62 0)
+		(at -5.5 7.62 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "303cd1fc-bf79-484a-be12-d0a6173d202f")
@@ -316,7 +316,7 @@
 		)
 	)
 	(fp_text user "G38"
-		(at -10 2.54 0)
+		(at -5.5 2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "4a160059-17e5-49b6-b5c3-29b2e3a0b9a7")
@@ -329,7 +329,7 @@
 		)
 	)
 	(fp_text user "3V3"
-		(at 10 -2.54 0)
+		(at 5.5 -2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "61f6e362-7eb6-453a-bc34-103e0a0e2cb9")
@@ -342,7 +342,7 @@
 		)
 	)
 	(fp_text user "5"
-		(at 13.5 7.62 0)
+		(at 9 7.62 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "621b4996-5d7a-476a-ac45-b3f210eb914f")
@@ -355,7 +355,7 @@
 		)
 	)
 	(fp_text user "9"
-		(at -13.5 0 0)
+		(at -9 0 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "66efb9c2-7d0b-412c-9aa5-111746097afd")
@@ -368,7 +368,7 @@
 		)
 	)
 	(fp_text user "1"
-		(at 13.5 -2.54 0)
+		(at 9 -2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "87b5b4ad-ed0c-461f-ab8b-53767257d88f")
@@ -381,7 +381,7 @@
 		)
 	)
 	(fp_text user "G5"
-		(at 10 0 0)
+		(at 5.5 0 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "8c04f85f-f5e7-4259-af72-6d8039f100f7")
@@ -394,7 +394,7 @@
 		)
 	)
 	(fp_text user "7"
-		(at -13.5 5.08 0)
+		(at -9 5.08 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "8f27f70f-8651-4181-86b6-09ec2af4935a")
@@ -407,7 +407,7 @@
 		)
 	)
 	(fp_text user "3"
-		(at 13.5 2.54 0)
+		(at 9 2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "abb65566-5d6b-4670-a4e1-b8b23efca44e")
@@ -420,7 +420,7 @@
 		)
 	)
 	(fp_text user "G7"
-		(at 10 5.08 0)
+		(at 5.5 5.08 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "b296f8ad-bb5b-407c-aa1a-5ae8163d02f5")
@@ -433,7 +433,7 @@
 		)
 	)
 	(fp_text user "5V"
-		(at -10 5.08 0)
+		(at -5.5 5.08 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "b522afea-cc59-48d8-8ded-bab1e989cf67")
@@ -446,7 +446,7 @@
 		)
 	)
 	(fp_text user "4"
-		(at 13.5 5.08 0)
+		(at 9 5.08 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "c54cae3f-b4f2-458d-904e-0b00620ce00c")
@@ -459,7 +459,7 @@
 		)
 	)
 	(fp_text user "8"
-		(at -13.5 2.54 0)
+		(at -9 2.54 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "c64670a7-f8d6-43c7-9704-0c59766b2151")
@@ -472,7 +472,7 @@
 		)
 	)
 	(fp_text user "6"
-		(at -13.5 7.62 0)
+		(at -9 7.62 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "d40c379a-bd30-4fbc-b0ac-c658c1e3ee59")
@@ -485,7 +485,7 @@
 		)
 	)
 	(fp_text user "G39"
-		(at -10 0 0)
+		(at -5.5 0 0)
 		(unlocked yes)
 		(layer "B.SilkS")
 		(uuid "ea12404d-4972-45f1-b6d4-86e7f452a8e1")
@@ -509,129 +509,95 @@
 		)
 	)
 	(pad "1" thru_hole rect
-		(at 12 -2.54 90)
+		(at 7.5 -2.54 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "8cffad5b-26b9-418e-a5d3-b7839ebd59d1")
 	)
 	(pad "2" thru_hole circle
-		(at 12 0 90)
+		(at 7.5 0 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "bd2da088-86af-4d69-9ac7-cae2a655a8b1")
 	)
 	(pad "3" thru_hole circle
-		(at 12 2.54 90)
+		(at 7.5 2.54 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "b27cb9ec-0609-4fed-a2ca-df669979e413")
 	)
 	(pad "4" thru_hole circle
-		(at 12 5.08 90)
+		(at 7.5 5.08 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "901b45f3-c325-4101-9966-28aac604e1b7")
 	)
 	(pad "5" thru_hole circle
-		(at 12 7.62 90)
+		(at 7.5 7.62 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "897351a9-e93b-4ce5-a102-c653d4be6048")
 	)
 	(pad "6" thru_hole circle
-		(at -12 7.62 90)
+		(at -7.5 7.62 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "5679c320-0f70-4848-91d0-c5fd048939a5")
 	)
 	(pad "7" thru_hole circle
-		(at -12 5.08 90)
+		(at -7.5 5.08 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "ac6290c0-8095-466c-8a11-7842469934a2")
 	)
 	(pad "8" thru_hole circle
-		(at -12 2.54 90)
+		(at -7.5 2.54 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "6f72282a-3f1e-4301-bf17-fd13425b374b")
 	)
 	(pad "9" thru_hole circle
-		(at -12 0 90)
+		(at -7.5 0 90)
 		(size 1.8 1.8)
 		(drill 1.05)
-		(layers "*.Cu" "*.Mask" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(uuid "1729226f-db27-4d96-811a-7a840619163e")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/Carrier_Board.pretty/AtomS3 Lite.stp"
+		(offset
+			(xyz 0 0 30)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

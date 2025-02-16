@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.35
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -96,11 +96,39 @@
           ""
         ],
         [
-          "solder_mask_bridge|183545180|90408207|216f775e-e1e0-4e3d-8fdd-e73a24713c64|1b5a56fb-b61d-4c30-8209-0091038cf453",
+          "lib_footprint_mismatch|120000000|110000000|fd59449d-5373-47d1-8e8e-0ec2f0415b67|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "solder_mask_bridge|183545180|97091792|2e4c829a-b412-4d43-94dc-b45c16ff7ba3|1b5a56fb-b61d-4c30-8209-0091038cf453",
+          "lib_footprint_mismatch|121000000|92000000|5ef19326-293d-4543-856d-84f5c05f1564|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|148000000|109500000|45a3a6c3-df8f-4f9a-9107-5edd24634124|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|159000000|84500000|7f18db8f-b67c-4062-8a36-14b9d368152e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|163500000|115000000|d34e2003-6120-4d8c-9985-0d4aa73a58f1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|169000000|110000000|4c18317e-f939-4392-9f25-5836d1e14160|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|177000000|84000000|56bfc46c-1fe7-4a2d-a36a-6f9bff8b7fef|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "solder_mask_bridge|183545180|90408207|216f775e-e1e0-4e3d-8fdd-e73a24713c64|11c0c775-373c-4bc3-ab86-b346d0fcf668",
+          ""
+        ],
+        [
+          "solder_mask_bridge|183545180|97091792|2e4c829a-b412-4d43-94dc-b45c16ff7ba3|11c0c775-373c-4bc3-ab86-b346d0fcf668",
           ""
         ]
       ],
@@ -543,7 +571,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
