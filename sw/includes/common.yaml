@@ -1,0 +1,251 @@
+# Common Config for all nodes
+
+esphome:
+  
+  name: $device
+  # On Boot Tasks
+  
+  on_boot:
+    - priority: 400
+      then:
+        - output.turn_on: output_high # turn on level shifters
+        - logger.log:
+            level: INFO
+            format: "Toggled Level Shifter OE High."
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: esp-idf
+
+captive_portal:
+
+# External Components
+external_components:
+- source: 
+    type: git
+    url: https://github.com/echavet/MitsubishiCN105ESPHome
+    ref: 357122c3cbbd07d53728baabaec331e106d9f921
+  refresh: never # specifying exact tag above
+
+# UART Configuration
+# ESPHome TX Pin is OUT from ESP device, RX Pin is IN.
+uart:
+  id: HP_UART
+  baud_rate: 2400
+  tx_pin: GPIO39
+  rx_pin: GPIO38
+
+# Logging Configuration
+# Enable logging
+logger:
+  level: INFO
+  logs:
+    EVT_SETS : INFO
+    WIFI : INFO
+    MQTT : INFO
+    CYCLE: WARN
+    WRITE_SETTINGS : INFO
+    SETTINGS : INFO
+    STATUS : INFO
+    CN105Climate: WARN
+    CN105: INFO
+    climate: WARN
+    sensor: WARN
+    chkSum : INFO
+    WRITE : WARN
+    READ : WARN
+    Header: INFO
+    Decoder : INFO
+    CONTROL_WANTED_SETTINGS: INFO
+
+# Switch Configuration
+# UART Level Shifter Output Enable, should happen after UART initialization.
+output:
+
+  - platform: gpio
+    pin: GPIO6
+    id: 'output_high'
+
+# Built-In RGB LED
+
+light:
+  # Use ESP32 RMT Library
+  - platform: esp32_rmt_led_strip
+
+    # WS2812B is the type of LED chip used
+    chipset: WS2812
+
+    # The LEDs are connected to GPIO35 on the board
+    pin: GPIO35
+
+    # There are 4 LEDs in the strip
+    num_leds: 4
+
+    # GRB is the color order for these specific LEDs (Green-Red-Blue)
+    rgb_order: GRB
+
+    # Internal ID to reference these LEDs in automations
+    id: led
+
+    # The name that appears in Home Assistant
+    name: "Module LED"
+
+    # When device restarts, LEDs start OFF
+    restore_mode: RESTORE_DEFAULT_OFF
+
+    # Built-in light effects you can activate from Home Assistant
+    effects:
+      # Pulse effect: LEDs fade in and out smoothly
+      - pulse:
+          name: "Pulse"
+          # How long each fade in/out takes (1 second)
+          transition_length: 1s
+          # How often to update the effect (1 second)
+          update_interval: 1s
+
+      # Strobe effect: LEDs flash on and off rapidly
+      - strobe:
+          name: "Strobe"
+
+      # Random effect: LEDs change to random colors
+      - random:
+          name: "Random"
+          # How long to transition between colors (5 seconds)
+          transition_length: 5s
+          # How often to pick a new random color (3 seconds)
+          update_interval: 3s
+
+# Status LED + Binary Light Shared
+
+  - platform: status_led
+    name: "System Status"
+    pin: GPIO5
+
+# Sync time with Home Assistant.
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+# Text sensors with general information.
+text_sensor:
+  # Expose ESPHome version as sensor.
+  - platform: version
+    name: ESPHome Version
+  # Expose WiFi information as sensors.
+  - platform: wifi_info
+    ip_address:
+      name: IP
+    ssid:
+      name: SSID
+    bssid:
+      name: BSSID
+
+
+# Sensor Configuration #########################################################
+sensor:
+
+# WiFi Signal Status
+  - platform: wifi_signal
+    name: "WiFi Signal Sensor"
+    update_interval: 30s
+
+# Uptime Status
+  - platform: uptime
+    name: Uptime
+
+# Remote Temperature (from Home Assistant)
+  - platform: homeassistant
+    name: "Remote Temperature Measurement"
+    entity_id: $remote_tmp_src
+    internal: false # Provide value back to Home Assistant
+    disabled_by_default: true
+    device_class: temperature
+    state_class: measurement
+    unit_of_measurement: "°C"
+    filters:
+      - clamp: # Limits values to range accepted by Mitsubishi units
+          min_value: 15
+          max_value: 29
+          ignore_out_of_range: true
+      - heartbeat: 20s
+      - throttle: 30s
+    on_value:
+      then:
+        - logger.log:
+            level: INFO
+            format: "Remote temperature received from HA: %.1f C"
+            args: [ 'x' ]
+        - lambda: 'id(hp).set_remote_temperature(x);'
+
+# Climate Entity Configuration
+# Creates the sensor used to receive the remote temperature from Home Assistant
+# Uses sensor selected in substitutions area at top of config
+climate:
+  - platform: cn105
+    id: hp
+    name: $climate_entity_name
+    icon: mdi:heat-pump
+    visual:
+      min_temperature: 15 # Adjust to your unit's min temp. SmartSet units can go to 10C for heating
+      max_temperature: 29
+      temperature_step:
+        target_temperature: 1
+        current_temperature: 0.5
+    
+    fahrenheit_compatibility: false
+    
+    # Timeout and communication settings
+    remote_temperature_timeout: 15min
+    update_interval: 2s
+    debounce_delay : 100ms
+    
+    # Various optional sensors, not all sensors are supported by all heatpumps
+    compressor_frequency_sensor:
+      name: Compressor Frequency
+      entity_category: diagnostic
+      disabled_by_default: true
+
+    outside_air_temperature_sensor:
+      name: Outside Air Temp
+      disabled_by_default: false
+    
+    vertical_vane_select:
+      name: Vertical Vane
+      disabled_by_default: false
+    
+    horizontal_vane_select:
+      name: Horizontal Vane
+      disabled_by_default: $hide_horizontal_vane
+    
+    isee_sensor:
+      name: ISEE Sensor
+      disabled_by_default: true
+    
+    stage_sensor:
+      name: Stage
+      entity_category: diagnostic
+      disabled_by_default: false
+    
+    sub_mode_sensor:
+      name: Sub Mode
+      entity_category: diagnostic
+      disabled_by_default: false
+    
+    auto_sub_mode_sensor:
+      name: Auto Sub Mode
+      entity_category: diagnostic
+      disabled_by_default: false
+    
+    input_power_sensor:
+      name: Input Power
+      disabled_by_default: true
+    
+    kwh_sensor:
+      name: Energy Usage
+      disabled_by_default: true
+    
+    runtime_hours_sensor:
+      name: Runtime Hours
+      entity_category: diagnostic
+      disabled_by_default: true
