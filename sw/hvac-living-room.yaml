@@ -1,0 +1,34 @@
+substitutions:
+
+  device: hvac-living-room
+  device_ip: 172.16.69.71
+  climate_entity_name: "Living Room"
+  fallback_ap_ssid: "${climate_entity_name} HVAC Recovery"
+  hide_horizontal_vane: false
+  remote_tmp_src: sensor.living_room_control_temperature
+
+<<: !include includes/common.yaml
+
+# Home Assistant API Configuration
+api:
+  encryption: 
+    key: !secret hvac-living-room-key
+
+ota:
+  - platform: esphome
+    password: !secret hvac-living-room-ota-pw
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  manual_ip:
+    static_ip: $device_ip
+    gateway: !secret iot-network-gateway
+    subnet: 255.255.255.0
+    dns1: !secret iot-network-dns
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: $fallback_ap_ssid
+    password: !secret hvac-living-room-ap-pw

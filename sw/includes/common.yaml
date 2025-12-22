@@ -22,7 +22,11 @@ captive_portal:
 
 # External Components
 external_components:
-- source: github://echavet/MitsubishiCN105ESPHome
+- source: 
+    type: git
+    url: https://github.com/echavet/MitsubishiCN105ESPHome
+    ref: 357122c3cbbd07d53728baabaec331e106d9f921
+  refresh: never # specifying exact tag above
 
 # UART Configuration
 # ESPHome TX Pin is OUT from ESP device, RX Pin is IN.
