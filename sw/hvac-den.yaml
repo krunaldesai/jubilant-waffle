@@ -2,7 +2,7 @@ substitutions:
 
   device: hvac-den
   device_ip: 172.16.69.73
-  climate_entity_name: "Master Bedroom"
+  climate_entity_name: "Den"
   fallback_ap_ssid: "${climate_entity_name} HVAC Recovery"
   hide_horizontal_vane: false
   remote_tmp_src: sensor.den_control_temperature
